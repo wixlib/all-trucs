@@ -1,0 +1,10 @@
+var nbr_to_send = document.getElementsByClassName("artdeco-button--secondary").length;
+var sended = nbr_to_send-3;
+console.log("i will send "+sended+" Invitation"); 
+console.log("Wait Please");
+for (i=3;i<nbr_to_send;i++){
+    var dd = document.getElementsByClassName("artdeco-button--secondary")[i];
+console.log("Invitation Sent!");
+dd.click();  }
+console.log(sended);
+
