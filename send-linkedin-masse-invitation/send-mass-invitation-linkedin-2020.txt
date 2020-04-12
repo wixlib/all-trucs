@@ -1,3 +1,7 @@
+function sleep(seconds){
+    var waitUntil = new Date().getTime() + seconds*1000;
+    while(new Date().getTime() < waitUntil) true;
+}
 var nbr_to_send = document.getElementsByClassName("artdeco-button--secondary").length;
 var sended = nbr_to_send-3;
 console.log("i will send "+sended+" Invitation"); 
@@ -7,4 +11,7 @@ for (i=3;i<nbr_to_send;i++){
 console.log("Invitation Sent!");
 dd.click();  }
 console.log(sended);
-
+var total = nbr_to_send-3;
+sleep(10);
+alert("Job Done ! Thank You ! I Have Sent For you "+total+" Invitation , Please Share Our website with your freinds");
+window.open('https://www.wixlib.com', '_blank');
